@@ -1,4 +1,5 @@
-// Rewrite the return statement to use a template literal so you can the substitute the variables you’ve defined.
+// Rewrite the return statement to use a template literal
+// so you can the substitute the variables you’ve defined.
 
 export default function getSanFranciscoDescription() {
   const year = 2017;
