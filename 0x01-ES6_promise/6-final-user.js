@@ -29,7 +29,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       return ({
         status: result.status,
         value: result.reason,
-      }
-      );
+      });
     }));
 }
