@@ -1,12 +1,20 @@
 // a program named 1-stdin.js that will be executed
 // through command line
 
-process.stdout.write('Welcome to Holberton School, what is your name?\n');
-process.stdin.on('data', (data) => {
-  const name = data.toString().trim();
-  process.stdout.write(`Your name is: ${name}\n`);
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
 });
-process.on('SIGINT', () => {
-  process.stdout.write('This important project will be closed.\n');
+
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
+
+rl.on('line', (input) => {
+  console.log(`Your name is: ${input}`);
+});
+
+rl.on('close', () => {
+  process.stdout.write('This important software is now closing\n');
   process.exit();
 });
