@@ -12,7 +12,7 @@ describe('calculateNumber', function() {
   describe('SUBTRACT', function() {
     it('should return the difference of two rounded numbers', function() {
       expect(calculateNumber('SUBTRACT', 5.8, 2.1)).to.equal(4);  // 6 - 2 = 4
-      expect(calculateNumber('SUBTRACT', 1.4, 3.5)).to.equal(-3);  // 1 - 4 = -3
+      expect(calculateNumber('SUBTRACT', 1.4, 3.5)).to.equal(-3);  // 1 - 3 = -3
     });
   });
 
