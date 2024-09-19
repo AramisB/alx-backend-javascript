@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^10.7.3"
+  }
+}
